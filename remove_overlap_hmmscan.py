@@ -20,7 +20,6 @@ for x in fh: # Reads the hmmscan output
 	stop = int(z[18])
 	ieval = float(z[12])
 	func = ' '.join(z[22::])
-	#domain = [func, start, stop, ieval]
 	domain = [sum_dom, start, stop, ieval]
 	if not ieval <= 0.001: continue # Filter out domains with evalue > 0.001
 	if not gene in domains:
