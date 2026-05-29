@@ -1,4 +1,7 @@
 # Remove overlapping domains
+# Usage:
+# > python3 remove_overlap_hmmscan.py domtblout_output_file_name
+
 import sys
 import re
 
